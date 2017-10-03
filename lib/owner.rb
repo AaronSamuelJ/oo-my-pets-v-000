@@ -75,11 +75,7 @@ class Owner
           dog_string = "1 dog."
         end
       elsif type == :fishes
-        if pets.size > 1
-          fish_string = "#{pets.size} #{type.to_s}"
-        else
-          fish_string = "1 fish."
-        end
+        fish_string = "#{pets.size} fish."
       end
     end
     "I have #{fish_string}, #{dog_string}, and #{cat_string}."
