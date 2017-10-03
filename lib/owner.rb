@@ -58,7 +58,6 @@ class Owner
     @pets.clear
   end
   def list_pets
-    binding.pry
     fish_string = ""
     cat_string = ""
     dog_string = ""
@@ -83,6 +82,7 @@ class Owner
         end
       end
     end
+    binding.pry
     #  "I have 2 fish, 3 dog(s), and 1 cat(s)."
   end
 end
