@@ -58,6 +58,8 @@ class Owner
     @pets.clear
   end
   def list_pets
-    binding.pry
+    # binding.pry
+    # @pets.each do |type, pets|
+    #
   end
 end
