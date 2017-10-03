@@ -58,17 +58,10 @@ class Owner
     @pets.clear
   end
   def list_pets
-    fish_string = ""
-    cat_string = ""
-    dog_string = ""
+    # fish_string = ""
+    # cat_string = ""
+    # dog_string = ""
     @pets.each do |type, pets| # :cats, :dogs, :fishes
-      # if type == :cats
-      #   cat_string = "#{pets.size} cat(s)"
-      # elsif type == :dogs
-      #   dog_string = "#{pets.size} dog(s)"
-      # elsif type == :fishes
-      #   fish_string = "#{pets.size} fish"
-      # end
       case type
       when :cats
         cat_string = "#{pets.size} cat(s)"
