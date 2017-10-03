@@ -75,7 +75,7 @@ class Owner
           dog_string = "1 dog."
         end
       elsif type == :fishes
-        fish_string = "#{pets.size} fish."
+        fish_string = "#{pets.size} fish"
       end
     end
     "I have #{fish_string}, #{dog_string}, and #{cat_string}."
