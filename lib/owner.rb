@@ -59,7 +59,30 @@ class Owner
   end
   def list_pets
     binding.pry
-    # @pets.each do |type, pets|
+    fish_string = ""
+    cat_string = ""
+    dog_string = ""
+    @pets.each do |type, pets| # :cats, :dogs, :fishes 
+      if type == :cats 
+        if pets.size > 1
+          cat_string = "#{pets.size} #{type.to_s}"
+        else
+          cat_string = "1 cat."
+        end
+      elsif type == :dogs 
+        if pets.size > 1
+          dog_string = "#{pets.size} #{type.to_s}"
+        else
+          dog_string = "1 dog."
+        end 
+      elsif type == :fishes 
+        if pets.size > 1
+          fish_string = "#{pets.size} #{type.to_s}"
+        else
+          fish_string = "1 fish."
+        end 
+      end
+    end
     #  "I have 2 fish, 3 dog(s), and 1 cat(s)."
   end
 end
