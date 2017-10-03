@@ -69,14 +69,14 @@ class Owner
       # elsif type == :fishes
       #   fish_string = "#{pets.size} fish"
       # end
-      case type 
-      when :cats 
+      case type
+      when :cats
         cat_string = "#{pets.size} cat(s)"
-      when :dogs 
+      when :dogs
         dog_string = "#{pets.size} dog(s)"
-      when :fishes 
+      when :fishes
         fish_string = "#{pets.size} fish"
-      end 
+      end
     end
     "I have #{fish_string}, #{dog_string}, and #{cat_string}."
   end
