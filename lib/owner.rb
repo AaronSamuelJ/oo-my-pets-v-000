@@ -82,7 +82,6 @@ class Owner
         end
       end
     end
-    binding.pry
-    #  "I have 2 fish, 3 dog(s), and 1 cat(s)."
+    "I have #{fish_string}, #{dog_string}, and #{cat_string}."
   end
 end
