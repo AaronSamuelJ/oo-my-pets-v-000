@@ -63,17 +63,9 @@ class Owner
     dog_string = ""
     @pets.each do |type, pets| # :cats, :dogs, :fishes
       if type == :cats
-        if pets.size > 1
-          cat_string = "#{pets.size} #{type.to_s}"
-        else
-          cat_string = "1 cat."
-        end
+        cat_string = "#{pets.size} cat(s)"
       elsif type == :dogs
-        if pets.size > 1
-          dog_string = "#{pets.size} #{type.to_s}"
-        else
-          dog_string = "1 dog."
-        end
+        dog_string = "#{pets.size} dog(s)"
       elsif type == :fishes
         fish_string = "#{pets.size} fish"
       end
